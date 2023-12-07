@@ -1,35 +1,37 @@
-
-import './App.css'
-import React,{ useState } from 'react'
+import React,{useState} from 'react'
+import "./FormContainer.css"
 import Enquiry from './Enquiry'
-
-function MainOne() {
-  const [firstName, setFirstName] = useState('') 
+import Preview from './Preview'
+const FormContainer = () => {
+    const [firstName, setFirstName] = useState('') 
   
-  const [mobile, setMobile] = useState('') 
-  
-  const [email, setEmail] = useState('') 
-   
-const[dob, setDob]=useState('')
-  
-
-  function validateForm() {
+    const [mobile, setMobile] = useState('') 
     
-
-    if (firstName.length == 0) {
-      alert('Invalid Form, First Name can not be empty')
-      return
+    const [email, setEmail] = useState('') 
+     
+  const[dob, setDob]=useState('')
+    
+  
+    function validateForm() {
+      
+  
+      if (firstName.length == 0) {
+        alert('Invalid Form, First Name can not be empty')
+        return
+      }
+      if (email.length == 0) {
+        alert('Invalid Form, Email Address can not be empty')
+        return
+      }
+  
+      alert('Form successfully fill')
     }
-    if (email.length == 0) {
-      alert('Invalid Form, Email Address can not be empty')
-      return
-    }
-
-    alert('Form successfully fill')
-  }
-
   return (
-    <div className="main">
+    <div className='form_container' >
+        <div style={{background:"lightgreen",width: "716px",height:"150px"
+}}>
+         
+      <div className='preview'><Preview/></div>
         <div className='enquiry'><Enquiry/></div>
       <form>
         <label>1.Name*</label>
@@ -66,8 +68,14 @@ const[dob, setDob]=useState('')
           Next
         </button>
       </form>
+   
+  
+        </div>
+        <div style={{background:"white",width: "716px",height:"500px"}}>
+          Form
+        </div>
     </div>
   )
 }
 
-export default MainOne
+export default FormContainer

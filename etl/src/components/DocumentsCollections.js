@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import Enquiry from './components/Enquiry'
-import Preview from './components/Preview'
+import Enquiry from './Enquiry'
+import Preview from './Preview'
+import './documentscollection.css'
 // import AttachmentIcon from '@mui/icons-material/Attachment';
-const MainTwo = () => {
+const DocumentCollections = () => {
   const [files, setFiles] = useState({});
   const [formData, setFormData] = useState({
     '10thMarksheet': '',
@@ -157,4 +158,4 @@ const dropzoneStyles = {
   cursor: 'pointer',
 };
 
-export default MainTwo;
+export default DocumentCollections;

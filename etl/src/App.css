@@ -37,31 +37,8 @@
   }
 }
 /* mainone */
-.main {
-  padding: 5%;
-  text-align: center;
-  display: grid;
-justify-content: center;
-}
 
-input {
-  padding: 1%;
-  width: 50%;
-  margin: 1% 2%;
-}
-
-button {
-  font-weight: bold;
-  background: red;
-  border: none;
-  color: white;
-  padding: 1%;
-}
-.enquiry{
-  width: 716px;
-height: 150px;
-flex-shrink: 0;
-
-border-radius: 8px 8px 0px 0px;
-background: var(--blue-15, rgba(26, 143, 230, 0.15));
+/* main2 */
+.home_container{
+  display: flex;
 }

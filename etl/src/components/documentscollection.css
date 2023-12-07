@@ -1,0 +1,32 @@
+ .main {
+        padding: 5%;
+        padding-left: 280px;
+        text-align: center;
+        display: grid;
+      justify-content: center;
+      width: 716px;
+      /* height: 821px; */
+    max-height: 100vh;
+    overflow-y: auto;
+      background-color: #F5F5F5;
+      border-radius: 8px;
+
+/* Elements Shadow */
+box-shadow: 0px 1px 4px 0px rgba(52, 52, 52, 0.15);
+      } 
+.details{
+    display: flex;
+    
+    justify-content: center;
+  padding: 2px 5px 118px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  background-color: red;
+  
+  }
+  input{
+    width: 186px;
+  height: 30px;
+  flex-shrink: 0;
+  }
