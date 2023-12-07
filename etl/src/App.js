@@ -6,7 +6,7 @@ import "./App.css"
 import { Button, Card } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FormContainer from './components/FormContainer';
-import InterviewAvailability from './components/InterviewAvailability';
+import InterviewAvailability from './components/FormPageFouth';
 import StatementOfPurpose from './components/StatementOfPurpose';
 import DocumentsCollections from './components/DocumentsCollections';
 const array=[

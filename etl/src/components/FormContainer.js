@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./FormContainer.css"
 import Enquiry from './Enquiry'
 import FormPageOne from './FormPageOne'
 import Footer from './Footer'
+const initDetails={
+    
+}
 const FormContainer = () => {
+const [details,setDetail]=useState(initDetails);
   return (
     <>
       <div className='home'>
@@ -14,11 +18,12 @@ const FormContainer = () => {
             <Enquiry />
           </div>
           <div style={{ background: "white", width: "716px", height: "500px" }}>
-            <FormPageOne />
+            <FormPageOne setDetail={setDetail} />
           </div>
         </div>
       </div>
-      <Footer />
+      //{console.log("!!!!!!!!!!!",details)}
+      <Footer details={details} />
     </>
   )
 }
