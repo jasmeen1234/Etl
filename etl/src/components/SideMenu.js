@@ -9,15 +9,16 @@ const details={
 }
 const documents={
   title:"Documents Collections",
-  content:"collect documents"
+  content:"Collect information from Candidates on their education, work experience, contact no,etc"
 }
 const purpose={
   title:"Statement of Purpose",
-  content:""
+  content:"Start creating a new form with the wide options of fields available"
+
 }
 const interview={
   title:"Interview Availability",
-  content:""
+  content:"Start creating a new form with the wide options of fields available"
 }
 const SideMenu = () => {
   return (
@@ -25,18 +26,19 @@ const SideMenu = () => {
       <SideMenuSubcomponent />
       <Typography style={{marginLeft:"50px"}}>Explore differnt sections</Typography>
       <div>
-      <Link to="/form" >
+      <Link to="/" >
         <SideMenuSubcomponent details={details} />
         </Link>
         <Link to="/documents" >
         <SideMenuSubcomponent  details={documents} />
         </Link>
-        <Link to="/interview" >
-        <SideMenuSubcomponent  details={interview}/>
-        </Link>
         <Link to="/purpose" >
         <SideMenuSubcomponent  details={purpose} />
         </Link>
+        <Link to="/interview" >
+        <SideMenuSubcomponent  details={interview}/>
+        </Link>
+        
 
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import SideMenu from './components/SideMenu';
-import Home from './components/Home';
+// import Home from './components/Home';
 import Header from './components/Header';
 import "./App.css"
 import { Button, Card } from '@mui/material';
@@ -10,6 +10,7 @@ import InterviewAvailability from './components/InterviewAvailability';
 import StatementOfPurpose from './components/StatementOfPurpose';
 import DocumentsCollections from './components/DocumentsCollections';
 const App = () => {
+  // const[userDetail, setUser]
   return (
 
     <Router>
@@ -22,8 +23,8 @@ const App = () => {
         <div className='home_container'>
           <SideMenu />
           <Routes>
-              <Route path="/" element={<Home />}  />           
-              <Route path="/form" element={<FormContainer />} />            
+              {/* <Route path="/" element={<Home />}  />            */}
+              <Route path="/" element={<FormContainer />} />            
               <Route path="/documents" element={<DocumentsCollections />} />
               <Route path="/interview" element={<InterviewAvailability />} />
               <Route path="/purpose" element={<StatementOfPurpose />} />
