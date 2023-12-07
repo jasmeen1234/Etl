@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import SideMenu from './components/SideMenu';
 // import Home from './components/Home';
 import Header from './components/Header';
@@ -9,8 +9,52 @@ import FormContainer from './components/FormContainer';
 import InterviewAvailability from './components/InterviewAvailability';
 import StatementOfPurpose from './components/StatementOfPurpose';
 import DocumentsCollections from './components/DocumentsCollections';
+const array=[
+{
+  page:"1",
+  name:"",
+  email:"",
+  dob:"",
+  contactno:"",
+
+},
+{
+  page:"2",
+  tenthmarksheet:"",
+twelthmarksheet:"",
+graduationmarksheet:"",
+  offerletter:"",
+  salaryslip:"",
+  bankstatement:"",
+incrementletter:"",
+  
+},
+{
+  page:"3",
+  tenthmarksheet:"",
+twelthmarksheet:"",
+graduationmarksheet:"",
+  offerletter:"",
+  salaryslip:"",
+  bankstatement:"",
+incrementletter:"",
+  
+},
+{
+  page:"4",
+  tenthmarksheet:"",
+twelthmarksheet:"",
+graduationmarksheet:"",
+  offerletter:"",
+  salaryslip:"",
+  bankstatement:"",
+incrementletter:"",
+  
+}
+
+]
 const App = () => {
-  // const[userDetail, setUser]
+  const[userDetail, setUserDetail]=useState([])
   return (
 
     <Router>
