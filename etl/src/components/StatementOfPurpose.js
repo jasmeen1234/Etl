@@ -32,6 +32,7 @@ const StatementOfPurpose = () => {
   };
 
   return (
+    
     <form onSubmit={handleSubmit}>
       
       <label>

@@ -6,16 +6,7 @@
     display: flex;
     }
     
-    /* .main {
-        padding: 5%;
-        text-align: center;
-        display: grid;
-      justify-content: center;
-      width: 903px;
-      height: 821px;
-      flex-shrink: 0;
-      background-color: #F5F5F5;
-      } */
+   
       
       input {
         padding: 1%;
@@ -38,7 +29,4 @@
       border-radius: 8px 8px 0px 0px;
       background: var(--blue-15, rgba(26, 143, 230, 0.15));
       }
-      .enquiry h1 name{
-        display: flex;
-        
-      }
+      

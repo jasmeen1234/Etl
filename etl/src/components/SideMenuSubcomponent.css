@@ -1,4 +1,4 @@
-.sideMenusubcomponent{
+.sideMenusubcomponent {
     width: 320px;
     height: 100px;
     margin-top: 48px;
@@ -6,4 +6,21 @@
     background-color: brown;
     border-color: lightgray;
     border-style: solid;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Apply styles for tablets */
+    .sideMenusubcomponent {
+      width: 250px; /* Adjust the width for tablets */
+      margin-left: 20px; /* Adjust margin for tablets */
     }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Apply styles for mobile */
+    .sideMenusubcomponent {
+      width: 100%; /* Make it full width on smaller screens */
+      margin: 20px 0; /* Adjust margin for mobile */
+    }
+  }
+  

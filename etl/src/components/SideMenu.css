@@ -1,6 +1,22 @@
-.sidemenu{
-    width: 450px;
-    height: 80vh;
-    
-    
-}
+.sidemenu {
+    width: 100%; 
+    height: 100vh; 
+  
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Apply styles for tablets */
+    .sidemenu {
+      width: 300px; 
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    /* Apply styles for mobile */
+    .sidemenu {
+      width: 100%; /* Make it full width on smaller screens */
+    }
+  }
+  
