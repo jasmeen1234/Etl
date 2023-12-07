@@ -31,30 +31,26 @@ incrementletter:"",
 },
 {
   page:"3",
-  tenthmarksheet:"",
-twelthmarksheet:"",
-graduationmarksheet:"",
-  offerletter:"",
-  salaryslip:"",
-  bankstatement:"",
-incrementletter:"",
+  input1:"",
+  input2:"",
+  input3:"",
   
 },
 {
   page:"4",
-  tenthmarksheet:"",
-twelthmarksheet:"",
-graduationmarksheet:"",
-  offerletter:"",
-  salaryslip:"",
-  bankstatement:"",
-incrementletter:"",
+  email:"",
+location:"",
+interviewdate:"",
+  interviewtime:"",
+  timezone:"",
+  interviewmedium:"",
+
   
 }
 
 ]
 const App = () => {
-  const[userDetail, setUserDetail]=useState([])
+  const[userDetail, setUserDetail]=useState(array)
   return (
 
     <Router>
@@ -68,7 +64,7 @@ const App = () => {
           <SideMenu />
           <Routes>
               {/* <Route path="/" element={<Home />}  />            */}
-              <Route path="/" element={<FormContainer />} />            
+              <Route path="/" element={<FormContainer setUserDetail={setUserDetail} userDetail={userDetail} />} />            
               <Route path="/documents" element={<DocumentsCollections />} />
               <Route path="/interview" element={<InterviewAvailability />} />
               <Route path="/purpose" element={<StatementOfPurpose />} />

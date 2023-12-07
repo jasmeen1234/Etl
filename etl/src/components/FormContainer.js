@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./FormContainer.css";
 import Enquiry from "./Enquiry";
 import Preview from "./Preview";
-const FormContainer = () => {
+const FormContainer = ({setUserDetail,userDetail}) => {
   const [firstName, setFirstName] = useState("");
 
   const [mobile, setMobile] = useState("");
@@ -23,6 +23,7 @@ const FormContainer = () => {
 
     alert("Form successfully fill");
   }
+  
   return (
     <div className="form_container">
       <div style={{ width: "716px", height: "150px" }}>
@@ -36,6 +37,7 @@ const FormContainer = () => {
           <label>1.Name*</label>
           <input
             placeholder="Enter Your Name"
+
             onChange={(e) => setFirstName(e.target.value)}
           />{" "}
           <br></br>
