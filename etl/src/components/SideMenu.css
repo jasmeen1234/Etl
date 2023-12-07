@@ -5,9 +5,9 @@
    
   }
   
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     /* Apply styles for tablets */
-    .sidemenu {
+    /* .sidemenu {
       width: 300px; 
     }
   }
@@ -15,8 +15,8 @@
   
   @media screen and (max-width: 480px) {
     /* Apply styles for mobile */
-    .sidemenu {
-      width: 100%; /* Make it full width on smaller screens */
+    /* .sidemenu { */
+      /* width: 100%; Make it full width on smaller screens
     }
-  }
-  
+  } */
+   

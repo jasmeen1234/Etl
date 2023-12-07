@@ -28,7 +28,7 @@ const FormContainer = () => {
     }
   return (
     <div className='form_container' >
-        <div style={{background:"lightgreen",width: "716px",height:"150px"
+        <div style={{width: "716px",height:"150px"
 }}>
          
       <div className='preview'><Preview/></div>
@@ -72,7 +72,7 @@ const FormContainer = () => {
   
         </div>
         <div style={{background:"white",width: "716px",height:"500px"}}>
-          Form
+         
         </div>
     </div>
   )

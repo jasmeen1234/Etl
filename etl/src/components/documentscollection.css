@@ -42,7 +42,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    /* Apply styles for tablets */
+     Apply styles for tablets
     .main {
       padding-left: 10px;
       width: 100%;
@@ -57,11 +57,11 @@
     .details {
       padding: 2px 5px;
     }
-  }
+} 
   
-  @media screen and (max-width: 480px) {
+   @media screen and (max-width: 480px) {
     /* Apply styles for mobile */
-    .main {
+     .main {
       padding-left: 10px;
       width: 100%;
       margin-left: 0;
@@ -75,5 +75,5 @@
     .details {
       padding: 2px 5px;
     }
-  }
+  } 
   

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import Enquiry from "./Enquiry";
+import Preview from "./Preview";
+import '../App.css'
 const StatementOfPurpose = () => {
   
   const [questionA, setQuestionA] = useState('');
@@ -32,14 +34,20 @@ const StatementOfPurpose = () => {
   };
 
   return (
-    
+    <div  className='main'>
+        <div className="preview">
+        <Preview />
+      </div>
+      <div className="enquiry">
+        <Enquiry />
+      </div>
     <form onSubmit={handleSubmit}>
       
       <label>
       1. Tell me about a time you were asked to do something you had never<br>
       </br> done before. How did you react? What did you learn?
       <br></br>
-        <textarea
+        <textarea  style= {{width:"515px",height:"68px"}}
           value={questionA}
           onChange={(e) => handleTextareaChange(e, setQuestionA)}
           required
@@ -50,9 +58,9 @@ const StatementOfPurpose = () => {
 
       {/* Question B */}
       <label>
-        Tell me about the last time something significant didn’t go according to plan at work.
-        What was your role? What was the outcome?
-        <textarea
+        Tell me about the last time something significant didn’t go according <br></br>to plan at work.
+        What was your role? What was the outcome?<br></br>
+        <textarea   style={{width:"515px",height:"68px"}}
           value={questionB}
           onChange={(e) => handleTextareaChange(e, setQuestionB)}
           required
@@ -62,8 +70,8 @@ const StatementOfPurpose = () => {
 
       {/* Question C */}
       <label>
-        What are the three things that are most important to you in a job?
-        <textarea
+        What are the three things that are most important to you in a job?<br></br>
+        <textarea    style={{width:"515px",height:"68px"}}
           value={questionC}
           onChange={(e) => handleTextareaChange(e, setQuestionC)}
           required
@@ -74,6 +82,7 @@ const StatementOfPurpose = () => {
       {/* Submit Button */}
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 

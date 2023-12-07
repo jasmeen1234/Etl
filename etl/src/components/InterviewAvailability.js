@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import Enquiry from "./Enquiry";
+import Preview from "./Preview";
+import '../App.css'
 const InterviewAvailability = () => {
   // State variables
   const [email, setEmail] = useState('');
@@ -25,6 +27,13 @@ const InterviewAvailability = () => {
   };
 
   return (
+    <div className='main'>
+        <div className="preview">
+        <Preview />
+      </div>
+      <div className="enquiry">
+        <Enquiry />
+      </div>
     <form onSubmit={handleSubmit}>
    
       <label>
@@ -42,7 +51,7 @@ const InterviewAvailability = () => {
 
       <br></br>
       <label>
-        Interview Date:
+        Interview Date:<br></br>
         <input type="date"  placeholder="DD/MM/YYYY" value={interviewDate} onChange={(e) => setInterviewDate(e.target.value)} required />
       </label>
       <br></br>
@@ -60,6 +69,7 @@ const InterviewAvailability = () => {
           <option value="Time Zone 2">Time Zone 2</option>
           
         </select>
+        <br></br>
       </label>
 
      <br></br>
@@ -72,11 +82,13 @@ const InterviewAvailability = () => {
           <option value="Video call">Video call</option>
           <option value="Other">Other</option>
         </select>
+        <br></br>
       </label>
       <br></br>
       
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 

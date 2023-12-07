@@ -16,13 +16,18 @@ const Header = () => {
           </div>
           ------------------------------
           <div>
-          <Checkbox   />
-          <Typography style={{color:"black"}} variant="p">Basis</Typography>
+          <Checkbox  />
+          <Typography style={{color:"black"}} variant="p">Set Up</Typography>
           </div>
           ------------------------------
           <div>
           <Checkbox  />
-          <Typography style={{color:"black"}} variant="p">Basis</Typography>
+          <Typography style={{color:"black"}} variant="p">Form Creation</Typography>
+          </div>
+          ------------------------------
+          <div>
+          <Checkbox  />
+          <Typography style={{color:"black"}} variant="p">Preview</Typography>
           </div>
         </Box>
 
