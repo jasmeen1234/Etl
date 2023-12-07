@@ -1,13 +1,13 @@
-.sideMenusubcomponent {
-    width: 320px;
-    height: 100px;
-    margin-top: 48px;
-    margin-left: 50px;
-    background-color: brown;
-    border-color: lightgray;
-    border-style: solid;
+.sideMenusubcomponent{
+  width: 320px;
+  height: 100px;
+  margin-top: 48px;
+  margin-left: 50px;
+  border-color: lightgray;
+  border-style: solid;
+  text-decoration: none;
   }
-  
+ 
   @media screen and (max-width: 768px) {
     /* Apply styles for tablets */
     .sideMenusubcomponent {

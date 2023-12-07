@@ -1,32 +1,10 @@
 .form_container{
-    width: 718px;
-    height: 80vh;
-    margin-top: 76px;
-    margin-left: 90px;
-    display: flex;
-    }
-    
-   
-      
-      input {
-        padding: 1%;
-        width: 50%;
-        margin: 1% 2%;
+  width: 718px;
+  height: 1111px;
+  margin-top: 60px;
+  margin-left: 90px;
+  }
+  .home{
+      width: 903px;  
+      background-color:rgba(245, 245, 245, 1);
       }
-      
-      button {
-        font-weight: bold;
-        background: red;
-        border: none;
-        color: white;
-        padding: 1%;
-      }
-      .enquiry{
-        width: 716px;
-      height: 150px;
-      flex-shrink: 0;
-      padding-right: auto;
-      border-radius: 8px 8px 0px 0px;
-      background: var(--blue-15, rgba(26, 143, 230, 0.15));
-      }
-      
